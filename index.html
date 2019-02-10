@@ -504,7 +504,8 @@
                             <div id="successSend" class="alert alert-success invisible">
                                 <strong>Well done!</strong>Your message has been sent.</div>
                             <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
-                            <form id="contact-form" action="php/mail.php">
+                            <form id="contact-form" action="https://formspree.io/vikz91.deb@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="SkipbitLabs Contact" />
                                 <div class="control-group">
                                     <div class="controls">
                                         <input class="span12" type="text" id="name" name="name" placeholder="* Your name..." />
@@ -513,7 +514,7 @@
                                 </div>
                                 <div class="control-group">
                                     <div class="controls">
-                                        <input class="span12" type="email" name="email" id="email" placeholder="* Your email..." />
+                                        <input class="span12" type="email" id="email" name="_replyto" placeholder="* Your email..." />
                                         <div class="error left-align" id="err-email">Please enter valid email adress.</div>
                                     </div>
                                 </div>
@@ -525,7 +526,8 @@
                                 </div>
                                 <div class="control-group">
                                     <div class="controls">
-                                        <button id="send-mail" class="message-btn">Send message</button>
+                                        <button id="send-mail" class="message-btn" type="submit" value="Send">Send
+                                            message</button>
                                     </div>
                                 </div>
                             </form>
